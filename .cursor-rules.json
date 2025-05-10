@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "project": "Seoul-Bike-Churn-Analytics",
+  "language": {
+    "python": {
+      "version": "3.8+",
+      "style": {
+        "max_line_length": 100,
+        "indent_size": 4,
+        "quote_type": "single",
+        "allow_trailing_comma": true
+      },
+      "linting": {
+        "enabled": true,
+        "tools": ["flake8", "pylint"],
+        "ignore": ["E501"]
+      },
+      "formatting": {
+        "enabled": true,
+        "tool": "black",
+        "line_length": 100
+      },
+      "docstring": {
+        "style": "google",
+        "required": true
+      }
+    },
+    "sql": {
+      "dialect": "bigquery",
+      "style": {
+        "keyword_case": "upper",
+        "identifier_case": "lower",
+        "max_line_length": 100,
+        "indent_size": 2
+      }
+    }
+  },
+  "folders": {
+    "src": {
+      "data": {
+        "description": "데이터 수집 및 전처리 관련 코드",
+        "files": ["*.py"]
+      },
+      "analysis": {
+        "description": "데이터 분석 및 모델링 코드",
+        "files": ["*.py", "*.ipynb"]
+      },
+      "visualization": {
+        "description": "데이터 시각화 관련 코드",
+        "files": ["*.py", "*.ipynb"]
+      },
+      "utils": {
+        "description": "유틸리티 함수 및 공통 모듈",
+        "files": ["*.py"]
+      }
+    },
+    "notebooks": {
+      "description": "Jupyter notebooks for analysis and visualization",
+      "files": ["*.ipynb"]
+    },
+    "sql": {
+      "description": "SQL 쿼리 파일",
+      "files": ["*.sql"]
+    },
+    "tests": {
+      "description": "테스트 코드",
+      "files": ["test_*.py"]
+    },
+    "docs": {
+      "description": "프로젝트 문서",
+      "files": ["*.md"]
+    },
+    "config": {
+      "description": "설정 파일",
+      "files": ["*.yaml", "*.json"]
+    }
+  },
+  "naming": {
+    "python": {
+      "files": "snake_case",
+      "classes": "PascalCase",
+      "functions": "snake_case",
+      "variables": "snake_case",
+      "constants": "UPPER_CASE"
+    },
+    "sql": {
+      "files": "snake_case",
+      "tables": "snake_case",
+      "columns": "snake_case"
+    }
+  },
+  "documentation": {
+    "required_files": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "LICENSE"
+    ],
+    "code_comments": {
+      "required": true,
+      "threshold": 0.2
+    }
+  },
+  "testing": {
+    "required": true,
+    "coverage": {
+      "minimum": 80,
+      "exclude": [
+        "tests/*",
+        "setup.py"
+      ]
+    },
+    "frameworks": ["pytest"]
+  },
+  "git": {
+    "commit_message": {
+      "format": "type(scope): description",
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "chore"
+      ],
+      "max_length": 72
+    },
+    "branch": {
+      "naming": "feature/issue-{number}-{description}",
+      "protected": ["main", "develop"]
+    }
+  },
+  "dependencies": {
+    "required": [
+      "pandas>=1.3.0",
+      "scikit-learn>=1.0.0",
+      "matplotlib>=3.4.0",
+      "seaborn>=0.11.0",
+      "google-cloud-bigquery>=2.34.0",
+      "pytest>=6.0.0",
+      "black>=21.0.0",
+      "flake8>=3.9.0",
+      "pylint>=2.8.0"
+    ]
+  },
+  "security": {
+    "secrets": {
+      "patterns": [
+        "api[_-]key",
+        "password",
+        "secret",
+        "token"
+      ],
+      "locations": [
+        ".env",
+        "config/*.yaml"
+      ]
+    }
+  }
+} 
