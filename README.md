@@ -4,10 +4,10 @@
 ## 개요
 이 프로젝트는 취업을 위해서 만든 학습용 프로젝트입니다.
 목표로 하는 포지션(Job Desription)은 다음과 같습니다.
-https://hanssem.applyin.co.kr/jobs/17808
-https://www.wanted.co.kr/wd/277851 
-https://www.wanted.co.kr/wd/277505
-https://toss.im/career/job-detail?job_id=4071102003&company=%ED%86%A0%EC%8A%A4&detailedPosition=%EA%B3%B5%ED%86%B5
+- https://hanssem.applyin.co.kr/jobs/17808
+- https://www.wanted.co.kr/wd/277851 
+- https://www.wanted.co.kr/wd/277505
+- https://toss.im/career/job-detail?job_id=4071102003&company=%ED%86%A0%EC%8A%A4&detailedPosition=%EA%B3%B5%ED%86%B5
 
 기획은 ChatGPT와 Grok3를 사용하였고, 구현은 Cusor를 이용한 바이브 코딩으로 구현하였습니다.
 
