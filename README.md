@@ -1,7 +1,7 @@
 # Seoul-Bike-Churn-Analytics
 2025 바이브코딩 워크숍
 
-##개요
+## 개요
 이 프로젝트는 취업을 위해서 만든 학습용 프로젝트입니다.
 목표로 하는 포지션(Job Desription)은 다음과 같습니다.
 https://hanssem.applyin.co.kr/jobs/17808
